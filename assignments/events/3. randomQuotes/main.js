@@ -1,8 +1,4 @@
-var quotes;
-
-// Write your code here
-
-
+var quotes = 
 
 quotes = [
     {
@@ -314,3 +310,19 @@ quotes = [
         "quoteText": "Great talent finds happiness in execution."
     }
 ];
+
+
+let para = document.createElement("p");
+document.body.append(para);
+
+
+
+
+document.addEventListener('keyup', (e) => {
+    if (e.keyCode == 32) {
+        let quote = quotes[Math.floor(Math.random() * 77)];
+let text = quote.quoteText;
+let auth = quote.quoteAuthor;
+para.innerText = text + "\n By " + auth;
+    }
+});

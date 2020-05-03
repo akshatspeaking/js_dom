@@ -1,4 +1,4 @@
-# DOM Traversing
+   # DOM Traversing
 
 Use the below instruction and solve it using `index.html` file. Write JavaScript in the `script` tag.
 
@@ -30,7 +30,7 @@ The children of a node are the nodes that are one level below it. Any nodes beyo
 
 2. Select all the `li` element and using `forEach` or `for..of` loop change the background color of all the `li` in `ul`.
 
-3. Access `li` node using the length property i.e node[0] and access the last list and change the color to `pink`.
+3. Access `li` node using the length property i.e node[0] and access the last li and change the color to `pink`.
 
 4. Select the middle element `li`
 

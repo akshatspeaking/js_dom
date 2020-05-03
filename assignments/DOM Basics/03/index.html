@@ -38,6 +38,17 @@
     const h1 = document.getElementsByTagName("h1")[0];
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
-    // Your code goes here
+    ul.firstElementChild.style.backgroundColor = "tomato";
+    document.querySelectorAll("li").forEach(x => x.style.backgroundColor = "aquamarine");
+    
+    
+    let items = document.querySelectorAll("li");
+    let numLi = items.length;
+    items[numLi - 1].style.color = "pink";
+    let selected = items[Math.floor(numLi / 2)];
+    selectedLi = items[Math.floor(numLi / 2)];
+    selectedLi.nextElementSibling.style.backgroundColor = "aquamarine";
+    selectedLi.previousElementSibling.style.backgroundColor = "coral";
+    
   </script>
 </html>

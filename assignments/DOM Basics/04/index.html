@@ -12,5 +12,19 @@
       <li>Favorites: <span id="favorites"></span></li>
       <li>Hometown: <span id="hometown"></span></li>
     </ul>
+
+    <script>
+
+document.body.style.fontFamily = "Arial, sans-serif";
+document.querySelector("#nickname").innerText = "admin";
+document.querySelector("#favorites").innerText = "grass, sky, stars, moon";
+document.querySelector("#hometown").innerText = "Pune";
+document.querySelectorAll("li").forEach(x => x.className = "listitem");
+document.querySelector(".listitem").style.color = "red";
+let pic = document.createElement("img");
+pic.src = "https://scontent-del1-1.xx.fbcdn.net/v/t1.0-9/67124754_10215608119016363_770320840012070912_o.jpg?_nc_cat=106&_nc_sid=09cbfe&_nc_ohc=c0Y64-d5EuwAX8_1Qj1&_nc_ht=scontent-del1-1.xx&oh=6c5ce0210d726a129d55a7224dd53907&oe=5ED573A2";
+document.body.append(pic);
+
+    </script>
   </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>mouseMove</title>
+</head>
+<body>
+
+   <div class = "circle" style = "width: 500px; height: 500px; border-radius: 50%; border: 2px solid grey; display: flex; justify-content: center; align-items: center;">
+      <h1>
+         Mouse Move Cursor
+      </h1>
+      <ul>
+         <li class="one"></li>
+         <li class="two"></li>
+         <li class="three"></li>
+         <li class="four"></li>
+      </ul>
+   </div>
+   
+   <script>
+
+      let c = document.querySelector(".circle");
+      c.addEventListener("mousemove", (e) => {
+         document.querySelector(".one").innerText = e.screenX;
+         document.querySelector(".two").innerText = e.screenY;
+         document.querySelector(".three").innerText = e.clientX;
+         document.querySelector(".four").innerText = e.clientY;
+        
+      })
+
+
+   </script>
+</body>
+</html>
